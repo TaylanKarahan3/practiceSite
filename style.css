@@ -224,6 +224,7 @@ header a {
     height: 75px;
     bottom: 20px;
     right: 30px;
+    outline: none;
 }
 
 /* Mobile responsive */
