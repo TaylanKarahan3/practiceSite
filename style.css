@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon&family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+}
+
+.logo {
+    font-family: inherit;
+    font-weight: 700;
+    margin-right: auto;
+    font-size: 50px;
+    cursor: default;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 9px 30px 0px;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.welcome div {
+    background-color: #222;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.picture {
+    width: 90vw;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0.3;
+}
+
+.hi-there {
+    position: absolute;
+    color: #eeeeee;
+    font-family: 'Kreon';
+    text-transform: capitalize;
+    font-size: 70px;
+}
+
+.content p {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    text-align: justify;
+    margin: 70px auto 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+.faq-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.faq-content ul {
+    width: 70%;
+    padding: 0 0;
+}
+
+.faq-content li {
+    list-style: none;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 70px auto;
+}
+
+.profile {
+    border-radius: 50%;
+    margin: 20px 50px;
+    width: 150px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about-us ul {
+    padding: 0;
+    list-style: none;
+    columns: 3;
+    text-align: center;
+    font-size: 20px;
+}
+
+.about-us li {
+    margin: auto 15px;
+}
+
+.about-us p {
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 350px;
+    height: 300px;
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact-us::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.column {
+    width: 50%;
+    padding: 50px;
+    margin-top: 30px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.contact li {
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+.icons {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.links {
+    list-style: none;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.links li {
+    padding-bottom: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #222;
+}
+
+.author {
+    font-size: 25px;
+    font-family: inherit;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.topBtn {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #222;
+    width: 75px;
+    height: 75px;
+    bottom: 20px;
+    right: 30px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .welcome div {
+        width: 90%;
+    }
+    .picture {
+        width: 90%;
+    }
+    header a {
+        font-size: 18px;
+    }
+    .about-us ul {
+        columns: 1;
+    }
+    .content p {
+        width: 90%;
+        text-align: center;
+    }
+    .faq-content ul {
+        width: 90%;
+    }
+    .column {
+        width: 100%;
+    }
+    .author {
+        font-size: 20px;
+    }
+    .links,
+    .contact li,
+    .icons {
+        font-size: 17px;
+        display: inline;
+    }
+}
+
+/* Laptop responsive */
+@media (max-width: 1368px) {
+    .welcome div {
+        width: 80vw;
+    }
+    .picture {
+        width: 80vw;
+    }
+    .about-us ul {
+        columns: 1;
+    }
+    .content p {
+        width: 80%;
+    }
+    .faq-content ul {
+        width: 80%;
+    }
+    .column {
+        width: 100%;
+    }
+    .author {
+        font-size: 20px;
+    }
+    .links,
+    .contact li,
+    .icons {
+        font-size: 17px;
+        display: inline;
+    }
+}
