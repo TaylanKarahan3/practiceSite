@@ -211,7 +211,7 @@ header a {
     margin-bottom: 25px;
 }
 
-.topBtn {
+.top-btn {
     display: none;
     z-index: 10;
     position: fixed;
@@ -229,13 +229,27 @@ header a {
 /* Mobile responsive */
 @media (max-width: 768px) {
     .welcome div {
-        width: 90%;
+        width: 90vw;
+        height: 250px;
     }
     .picture {
-        width: 90%;
+        width: 90vw;
+        height: 250px;
+    }
+    .logo {
+        font-size: 45px;
     }
     header a {
         font-size: 18px;
+    }
+    header li {
+        margin-top: 8px;
+    }
+    .header {
+        font-size: 40px;
+    }
+    .hi-there {
+        font-size: 50px;
     }
     .about-us ul {
         columns: 1;
@@ -248,7 +262,15 @@ header a {
         width: 90%;
     }
     .column {
-        width: 100%;
+        margin: -50px 0;
+    }
+    .contact-us {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-us ul {
+        padding: 0;
     }
     .author {
         font-size: 20px;
@@ -258,6 +280,10 @@ header a {
     .icons {
         font-size: 17px;
         display: inline;
+        text-align: center;
+    }
+    .top-btn {
+        font-size: 40px;
     }
 }
 
