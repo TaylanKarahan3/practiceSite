@@ -1,8 +1,6 @@
 const copyright = document.querySelector('#copyright')
 const aboutTest = document.querySelector('#about-test')
 const btn = document.querySelector('#topBtn')
-const hamburger = document.querySelector('.hamburger')
-const navMenu = document.querySelector('.nav-menu')
 
 const year = new Date().getFullYear()
 copyright.innerHTML = `&copy ${year} Taylan Karahan` // copyright dynamic
